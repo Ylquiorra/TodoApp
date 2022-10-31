@@ -1,0 +1,146 @@
+* {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 28px;
+}
+.todo {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 100;
+    font-size: 96px;
+    color: #e9d9d8;
+    margin: 0 0 30px 0;
+  }
+
+  &__block {
+    background-color: #fff;
+    min-width: 700px;
+    padding: 10px 0;
+    box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.08);
+  }
+}
+.block-todo {
+  &__top {
+    border-bottom: 1px solid #ececec;
+    padding: 0 10px;
+  }
+
+  &__main {
+  }
+  &__main-info {
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: #e6e6e6;
+    }
+  }
+
+  &__main-string {
+    display: flex;
+    align-items: center;
+  }
+
+  &__main-active {
+    line-height: 2.5;
+    padding: 0 10px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__main-completed {
+    line-height: 2.5;
+    padding: 0 10px;
+    border-bottom: 1px solid #ececec;
+    p {
+      text-decoration: line-through;
+      color: #e9d9d8;
+    }
+  }
+
+  &__buttom {
+    padding: 10px 10px 0 10px;
+    line-height: 2;
+  }
+
+  &__buttom-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__buttom-left {
+  }
+
+  &__buttom-active-button {
+    display: flex;
+    div {
+      margin: 0 20px 0 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &__buttom-clear-completed {
+    cursor: pointer;
+  }
+}
+.top-block-todo {
+  &__body {
+    display: flex;
+    align-items: center;
+    input {
+      line-height: 2.5;
+      width: 100%;
+      background-color: #fefefe;
+      &::placeholder {
+        color: #e6e6e6;
+      }
+    }
+  }
+  &__body-arrow {
+    display: flex;
+    padding: 0 0 0 8px;
+    margin: 0 26px 0 0;
+  }
+}
+
+.block-todo-text {
+  font-size: 18px;
+}
+.buttom-active-button {
+  &__all {
+  }
+  &__active {
+  }
+  &__completed {
+  }
+}
+.button-text-block {
+  cursor: pointer;
+  padding: 0 12px;
+  border: #ffffff 1px solid;
+  border-radius: 10px;
+}
+.active-button {
+  padding: 0 12px;
+  border: #e6e6e6 1px solid;
+  border-radius: 10px;
+}
+
+.circle-status-todo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0 20px 0 0;
+}
